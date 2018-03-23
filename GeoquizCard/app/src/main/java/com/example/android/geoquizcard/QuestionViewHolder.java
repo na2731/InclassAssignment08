@@ -38,12 +38,25 @@ public class QuestionViewHolder extends RecyclerView.ViewHolder {
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (questionCountry.getText().equals("asia")) {
+                if (questionCountry.getText().equals("Asia")) {
                     Toast.makeText(context, String.valueOf(questions.get(0).isTrue), Toast.LENGTH_SHORT).show();
                 }
-                if(questionCountry.getText().equals("australia")){
+                if(questionCountry.getText().equals("Australia")){
                     Toast.makeText(context, String.valueOf(questions.get(2).isTrue), Toast.LENGTH_SHORT).show();
                 }
+                if(questionCountry.getText().equals("Africa")){
+                    Toast.makeText(context, String.valueOf(questions.get(3).isTrue), Toast.LENGTH_SHORT).show();
+                }
+                if(questionCountry.getText().equals("Mideast")){
+                    Toast.makeText(context, String.valueOf(questions.get(4).isTrue), Toast.LENGTH_SHORT).show();
+                }
+                if(questionCountry.getText().equals("Americas")){
+                    Toast.makeText(context, String.valueOf(questions.get(5).isTrue), Toast.LENGTH_SHORT).show();
+                }
+                if(questionCountry.getText().equals("Oceans")){
+                    Toast.makeText(context, String.valueOf(questions.get(6).isTrue), Toast.LENGTH_SHORT).show();
+                }
+//fdgdfg
             }
         });
     }
